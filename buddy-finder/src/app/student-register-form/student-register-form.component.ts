@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StudentsService } from '../students.service';
 
 @Component({
   selector: 'app-student-register-form',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudentRegisterFormComponent implements OnInit {
 
-  constructor() { }
+  public successMsg: string | undefined
+  public errorMsg: string | undefined
+  private name!: string;
+  private email!: string;
+  private modules!: string[]
+  
+
+  constructor(private studentService:StudentsService) { }
 
   ngOnInit(): void {
+  }
+
+  registerStudent(){
+    this.successMsg = '';
+    this.errorMsg = '';
+    this.studentService.addStudent
   }
 
 }
