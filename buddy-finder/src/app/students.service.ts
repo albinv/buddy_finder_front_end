@@ -1,7 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { env } from 'process';
-import { stringify } from 'querystring';
+import { Injectable } from '@angular/core';;
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { MongoDBInsertReturn, Student } from './Student';
@@ -16,7 +14,7 @@ export class StudentsService {
   constructor(private http: HttpClient) { }
     
   addStudent(name: string, email: string, modules: string[], date_registered: string): Observable<MongoDBInsertReturn> {
-    return this.http.post<MongoDBInsertReturn>(`${env.BASE_URL}/add-student`, 
+    return this.http.post<MongoDBInsertReturn>('http://localhost:3000/add-student',
       {name, email, modules, date_registered})
   }
    
