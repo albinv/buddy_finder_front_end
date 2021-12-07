@@ -13,6 +13,7 @@ export class StudentClass {
         public name:               string,
         public email:              string,
         public modulesString:      string,
+        public acceptTerms:        boolean,
         public modules:            string[],
         public date_registered:    string
     ) {  }
