@@ -11,8 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
-import { HomeComponent } from './home/home.component';
 import { StudentRegisterFormComponent } from './student-register-form/student-register-form.component';
+import { SuccessMsgComponent } from './success-msg/success-msg.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
@@ -21,8 +21,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    StudentRegisterFormComponent
+    StudentRegisterFormComponent,
+    SuccessMsgComponent
   ],
   imports: [
     BrowserModule,
