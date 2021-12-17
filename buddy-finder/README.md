@@ -1,4 +1,4 @@
-# BuddyFinder
+# BuddyFinder Front End
 
 Run `npm i` to install all required packages
 
